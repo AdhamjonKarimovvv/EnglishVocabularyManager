@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-refresh", "@typescript-eslint"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ]
+  }
+}
